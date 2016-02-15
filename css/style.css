@@ -74,7 +74,7 @@ li {
   list-style: circle;
 }
 h2:after {
-  content: url(http://s12.postimg.org/834tmw409/cursorblink.gif);
+  content: url(/img/blink.gif);
   vertical-align: -15px;
   ;
 }
