@@ -1,4 +1,5 @@
-  @import url(https://fonts.googleapis.com/css?family=Playfair+Display:900italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:900italic);
+
 html {
   background-color: white;
   -webkit-font-smoothing: antialiased;
@@ -50,7 +51,7 @@ h1 {
   padding-bottom: 20px;
 }
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display" , serif;
   font-size: 100px;
   margin-top: 60px;
   line-height: 2;
@@ -153,6 +154,15 @@ footer {
 @media all and (max-width:900px) {
   body {
     font-size: 30px;
+  }
+  a:link {
+    color: blue;
+    border-bottom: 1px solid blue;
+  }
+  a:hover {
+    color: blue;
+    text-decoration: none;
+    position: relative;
   }
   #zen-supporting, .intro {
     margin: auto;
