@@ -1,0 +1,204 @@
+  @import url(https://fonts.googleapis.com/css?family=Playfair+Display:900italic);
+html {
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  animation: appear 2s;
+}
+::selection {
+  background: yellow;
+}
+body {
+  font-family: Garamond, serif;
+  font-size: 18px;
+  margin-top: 30px;
+  color: #333;
+}
+a:link {
+  color: blue;
+  text-decoration: none;
+  transition: .3s;
+}
+a:visited {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
+  position: relative;
+  top: -1px;
+}
+.summary a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: blue;
+}
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+abbr[title] {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+h1 {
+  display: inline;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  border-bottom: 1px solid blue;
+  padding-bottom: 20px;
+}
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 100px;
+  margin-top: 60px;
+  line-height: 2;
+}
+.summary {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid blue;
+}
+.design-selection li {
+  list-style: decimal;
+}
+li {
+  list-style: circle;
+}
+h2:after {
+  content: url(http://s12.postimg.org/834tmw409/cursorblink.gif);
+  vertical-align: -15px;
+  ;
+}
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  display: inline;
+  margin-bottom: 10px;
+}
+header {
+  margin: auto;
+}
+#zen-supporting, .intro {
+  margin: auto;
+  width: 800px;
+}
+p {
+  margin-bottom: 20px;
+}
+.sidebar {
+  display: inline-block;
+  width: 200px;
+  height: 100%;
+  padding-left: 30px;
+  margin-right: 10px;
+  position: fixed;
+  top: 20px;
+  right: 0;
+  margin-top: 10px;
+  animation: sideappear 2.5s;
+}
+.archives, .resources {
+  margin-top: 10px;
+}
+a.design-name {
+  display: block;
+}
+footer {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 15px;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.designer-name {
+  font-style: italic;
+}
+@keyframes sideappear {
+  from {
+    opacity: 0;
+    margin-top: 100px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 10px;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    margin-top: 100px;
+  }
+  to {
+    opacity: 1;
+    margin-top: inherit;
+  }
+}
+
+/* override css for mobile browsers */
+
+@media all and (max-width:1200px) {
+  #zen-supporting, .intro {
+    margin-left: 40px;
+    width: 650px;
+  }
+  h2 {
+    line-height: 1;
+  }
+}
+@media all and (max-width:900px) {
+  body {
+    font-size: 30px;
+  }
+  #zen-supporting, .intro {
+    margin: auto;
+    width: 90%;
+  }
+  .sidebar {
+    display: block;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    animation: none;
+    padding: 0px;
+  }
+  a.design-name {
+    display: inline;
+  }
+  .design-selection li {
+    list-style: none;
+  }
+  li {
+    list-style: none;
+  }
+  ul, li {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .zen-resources {
+    padding-bottom: 50px;
+  }
+  footer {
+    font-family: Garamond, serif;
+    font-size: 30px;
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .summary {
+    font-size: 30px;
+  }
