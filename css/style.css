@@ -25,9 +25,7 @@ a:visited {
 }
 a:hover {
   color: black;
-  text-decoration: underline;
-  position: relative;
-  top: -1px;
+  text-decoration: none;
 }
 .summary a:hover {
   color: white;
