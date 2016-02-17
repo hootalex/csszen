@@ -87,7 +87,7 @@ header {
 }
 #zen-supporting, .intro {
   margin: auto;
-  width: 595px;
+  width: 570px;
 }
 p {
   margin-bottom: 20px;
@@ -140,7 +140,6 @@ footer {
     margin-top: inherit;
   }
 }
-
 .preamble p:nth-of-type(1):first-letter,
 .explanation p:nth-of-type(1):first-letter,
 .participation p:nth-of-type(1):first-letter,
@@ -149,14 +148,14 @@ footer {
  {
   float: left;
   font-family: Georgia , serif;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 1px blue;
-  color: black;
+  color: #333;
   font-size: 75px;
   line-height: 60px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px; }
+  margin-top: 4px;
+  margin-right: 8px;
+  margin-left: 3px;
+  padding: 20px;
+  border: 1px solid #333;
 }
 
 /* override css for mobile browsers */
@@ -164,12 +163,26 @@ footer {
 @media all and (max-width:1200px) {
   #zen-supporting, .intro {
     margin-left: 40px;
-    width: 595px;
+    width: 570px;
   }
 }
 @media all and (max-width:900px) {
   body {
     font-size: 23px;
+  }
+  .explanation p:nth-of-type(1):first-letter,
+  .participation p:nth-of-type(1):first-letter,
+  .benefits p:nth-of-type(1):first-letter,
+  .requirements p:nth-of-type(1):first-letter {
+    font-family: Garamond, serif;
+    font-size: 23px;
+    margin-top: 30px;
+    color: #333;
+    line-height: 1;
+    float: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
   }
   a:link {
     color: blue;
@@ -230,17 +243,19 @@ footer {
     font-size: 23px;
   }
 
-  .preamble p:nth-of-type(1):first-letter,
-  .explanation p:nth-of-type(1):first-letter,
-  .participation p:nth-of-type(1):first-letter,
-  .benefits p:nth-of-type(1):first-letter,
-  .requirements p:nth-of-type(1):first-letter
+  .preamble p:nth-of-type(1):first-letter
    {
     float: left;
     font-family: Georgia , serif;
-    font-size: 90px;
-    line-height: 70px;
-    padding-top: 4px;
-    padding-right: 8px;
-    padding-left: 3px; }
+    font-size: 100px;
+    line-height: 50px;
+    margin-top: 5px;
+    margin-right: 8px;
+    margin-left: 3px;
+    padding: 20px;
+    border: 1px solid #333;
+   }
   }
+
+  }
+}
