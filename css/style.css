@@ -2,7 +2,6 @@
 
 html {
   background-color: white;
-  background-image: linear-gradient(white, lightblue, white);
   -webkit-font-smoothing: antialiased;
   animation: appear 2s;
 }
